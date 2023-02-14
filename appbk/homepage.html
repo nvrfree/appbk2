@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>The nav</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="hero">
+
+        <h1>Consulting Firm</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida
+            pellentesque
+            urna
+            varius vitae.</p>
+        <a href="#contact" class="btn black">Register sekarang</a>
+        <a href="login.html" class="btn blackinvert">Login</a>
+
+    </div>
+    </header>
+    <div class="card-container mh-1">
+        <div class="card">
+            <div class="card-content">
+                <h1>Konsultasi</h1>
+                <h2>Pengaduan</h2>
+                <p>Your card description</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h1>Pengaduan</h1>
+                <h2>Pengaduan</h2>
+                <p>Your card description</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h1>Your Card Title</h1>
+                <h2>Pengaduan</h2>
+                <p>Your card description</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="feature-section d-flex nowrap gap-1">
+        <div class="left">
+            <h2>Form Pengaduan</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut malesuada enim. Donec euismod nisi
+                eget
+                lectus blandit, id fringilla nibh tempor.</p>
+            <a href="#" class="btn primary">Learn More</a>
+        </div>
+        <div class="right"><img src="img/FeaturePengaduan.png" alt=""></div>
+    </section>
+
+    <section class="feature-section d-flex nowrap row-reverse gap-1">
+        <div class="right">
+            <h2>Feature Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut malesuada enim. Donec euismod nisi
+                eget
+                lectus blandit, id fringilla nibh tempor.</p>
+            <a href="#" class="btn primary">Learn More</a>
+        </div>
+        <div class="left"><img src="img/FeaturePengaduan.png" alt=""></div>
+    </section>
+
+
+    <section class="home"></section>
+    <section class="faq">
+        <div class="container">
+            <h2 class="faq-title">FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is this FAQ page about?
+                </div>
+                <div class="faq-answer">
+                    This FAQ page is a collection of frequently asked questions and answers about a particular subject.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    How do I use this FAQ page?
+                </div>
+                <div class="faq-answer">
+                    You can browse through the questions and click on any of them to reveal the answer.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">Last Call to Action</h2>
+            <p class="cta-text">Your call to action description goes here</p>
+            <a href="#" class="cta-button">Take Action</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Your footer text goes here</p>
+        </div>
+    </footer>
+    <style>
+
+    </style>
+
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+
+            //Toggle Nav
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+
+                //Animate Links
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = ''
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+
+                    }
+                });
+
+                //burger animation
+                burger.classList.toggle('toggle');
+
+
+            });
+
+
+
+
+        }
+
+        navSlide();
+
+
+        document.querySelectorAll(".faq-question").forEach(question => {
+            question.addEventListener("click", () => {
+                question.parentElement.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>The nav</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+
+        <!-- 
+        <nav>
+            <div class="logo">
+                Aplikasi BK
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pengaduan</a></li>
+                <li><a href="#">Konsultasi</a></li>
+                <li><a href="#">Hubungi Kami</a> </li>
+            </ul>
+
+            <div>
+                <a href="#" class="btn light">Register</a>
+                <a href="login.html" class="btn dark">Login</a>
+            </div> -->
+        <!-- end of navigation bar -->
+
+        <div class="hero">
+
+            <h1>Consulting Firm</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida
+                pellentesque
+                urna
+                varius vitae.</p>
+            <a href="#contact" class="btn black">Register sekarang</a>
+            <a href="login.html" class="btn blackinvert">Login</a>
+
+        </div>
+    </header>
+    <div class="card-container mh-1">
+        <div class="card">
+            <div class="card-content">
+                <h1>Konsultasi</h1>
+                <h2>Pengaduan</h2>
+                <p>Your card description</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h1>Pengaduan</h1>
+                <h2>Pengaduan</h2>
+                <p>Your card description</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h1>Your Card Title</h1>
+                <h2>Pengaduan</h2>
+                <p>Your card description</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="feature-section d-flex nowrap gap-1">
+        <div class="left">
+            <h2>Form Pengaduan</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut malesuada enim. Donec euismod nisi
+                eget
+                lectus blandit, id fringilla nibh tempor.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="right"><img src="img/FeaturePengaduan.png" alt=""></div>
+    </section>
+
+    <section class="feature-section d-flex nowrap row-reverse gap-1">
+        <div class="right">
+            <h2>Feature Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut malesuada enim. Donec euismod nisi
+                eget
+                lectus blandit, id fringilla nibh tempor.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="left"><img src="img/FeaturePengaduan.png" alt=""></div>
+    </section>
+
+    <div class="faq">
+        <h2 class="faq-header">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 class="faq-question">What is a responsive dropdown FAQ page?</h3>
+            <div class="faq-answer">
+                <p>A responsive dropdown FAQ page is a FAQ (frequently asked questions) page that has a dropdown feature
+                    to show and hide answers to questions. The design of the page adjusts automatically to different
+                    screen sizes to ensure a consistent user experience on all devices.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">How does it work?</h3>
+            <div class="faq-answer">
+                <p>The dropdown effect is achieved using JavaScript or jQuery to toggle the visibility of the answer
+                    when the question is clicked. The responsive design is implemented using CSS media queries to adjust
+                    the layout based on the screen size of the device.</p>
+            </div>
+        </div>
+        <!-- Add more faq-item sections as needed -->
+    </div>
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">Last Call to Action</h2>
+            <p class="cta-text">Your call to action description goes here</p>
+            <a href="#" class="cta-button">Take Action</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Your footer text goes here</p>
+        </div>
+    </footer>
+    <script>
+        const navSlide = () => {
+            const burger = document.getElementById(".burger");
+            const nav = document.getElementById(".nav-links");
+
+            burger.addEventListener("click", () => {
+                nav.classList.toggle("nav-active");
+
+                burger.classList.toggle("toggle");
+            });
+        };
+
+        navSlide();
+
+    </script>
+
+</body>
+
+</html>
